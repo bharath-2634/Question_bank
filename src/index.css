@@ -1,1 +1,60 @@
 @import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #6EC59B;
+    --primary-nav : #131D2D;
+    --nav-link : #c246bf;
+    --primary-button : #40B47C;
+    --primary-box : #1F1F20;
+    --mvp-primary-btn : #453FF3;
+  }
+}
+
+/* @layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+
+/* Hide scrollbar for all browsers */
+html {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+html::-webkit-scrollbar {
+  display: none; 
+}
+
+body {
+  /* scrollbar-width: none; Firefox */
+   -ms-overflow-style: none; 
+   font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+   display: none;
+}
+
+/* Hide scrollbar for any scrollable element */
+* {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+*::-webkit-scrollbar {
+  display: none; 
+}
+
+
+/* body {
+  @apply font-poppins;
+} */
